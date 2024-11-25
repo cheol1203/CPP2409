@@ -165,3 +165,4 @@ void CheckState(const vector<vector<int>>& map, int user_x, int user_y, User& us
 bool CheckUser(User* user) {
     return user->GetHP() > 0;
 }
+

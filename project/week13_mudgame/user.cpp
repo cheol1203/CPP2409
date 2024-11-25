@@ -58,3 +58,4 @@ int Warrior::GetItemCnt() const {
 void Warrior::DoAttack() const {
     cout << "베기 사용" << endl;
 }
+

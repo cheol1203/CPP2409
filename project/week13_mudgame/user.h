@@ -44,3 +44,4 @@ public:
     int GetItemCnt() const override;
     void DoAttack() const override;
 };
+
