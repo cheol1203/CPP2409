@@ -26,6 +26,7 @@ int main() {
     User* current_user = nullptr;
     int user_x = 0, user_y = 0;
 
+    re:
     cout << "직업을 선택하세요 (1: Magician, 2: Warrior): ";
     int choice;
     cin >> choice;
@@ -37,8 +38,8 @@ int main() {
         current_user = new Warrior();
         cout << "Warrior를 선택했습니다." << endl;
     } else {
-        cout << "잘못된 선택입니다. 게임을 종료합니다." << endl;
-        return 0;
+        cout << "잘못된 선택입니다. 다시 선택하시오." << endl;
+        goto re;
     }
 
     while (true) {
